@@ -11,7 +11,7 @@ coisas podem não estar 100% iguais**.
 ## 👨‍🏫 Testando
 
 Você pode testar como ficou
-[clicando aqui](https://jncjcoder.github.io/submarine-port/index.html).
+[clicando aqui](https://jncjcoder.github.io/Submarine-port/).
 
 ## 🏗️ TO-DO
 
