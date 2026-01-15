@@ -1,0 +1,18 @@
+canvas
+{
+	position: absolute;
+	width: 348px; /* 256 */
+	height: 660px; /* 440 */
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	border: 1px solid #000;
+    image-rendering: pixelated;
+}
+
+body
+{
+	background-color: #3a3a3a;
+}
