@@ -53,7 +53,9 @@ export default class Game
      */
     changeScene(sceneNumber)
     {
+        this.scenes[this.actualScene].exit();
         this.actualScene = sceneNumber;
+        this.scenes[this.actualScene].enter();
     }
 
     loop = () => {

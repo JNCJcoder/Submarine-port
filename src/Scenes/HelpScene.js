@@ -5,6 +5,16 @@ class HelpScene
         this.game = game;
     }
 
+    enter()
+    {
+
+    }
+
+    exit()
+    {
+
+    }
+
     update(keys)
     {
         if(keys.isDown("Enter"))

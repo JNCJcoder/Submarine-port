@@ -15,7 +15,7 @@ Você pode testar como ficou
 
 ## 🏗️ TO-DO
 
-- [ ] Portar o audio (.mmf)
+- [x] Portar o audio (.mmf)
 - [ ] Finalizar controle mobile
 
 ## 🎮 Controles

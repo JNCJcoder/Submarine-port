@@ -5,6 +5,16 @@ class StartScene
         this.game = game;
     }
 
+    enter()
+    {
+
+    }
+
+    exit()
+    {
+
+    }
+
     update(keys)
     {
         

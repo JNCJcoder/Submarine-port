@@ -80,6 +80,12 @@ const assets = {
         paused:             "assets/image/paused.png"
         // -------------------------------------
     },
+    sounds: {
+        bgm1: "assets/audio/bgm1.wav",
+        bgm2: "assets/audio/bgm2.wav",
+        bgm3: "assets/audio/bgm3.wav",
+        explosion: "assets/audio/explosion.wav",
+    }
 };
 
 assetLoader.loadAll(assets).then(() => {

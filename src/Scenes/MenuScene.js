@@ -15,6 +15,16 @@ class MenuScene
         this.runFrame = 0;
     }
 
+    enter()
+    {
+
+    }
+
+    exit()
+    {
+
+    }
+
     update(keys)
     {
         if(keys.isDown("ArrowDown"))

@@ -1,5 +1,6 @@
 import Player from "../Entities/Player.js";
 import SaveManager from "../SaveManager.js";
+import AudioManager from "../AudioManager.js";
 import drawScore from "../Utils/DrawScore.js";
 import Random from "../Utils/Random.js";
 
@@ -24,6 +25,7 @@ class GameScene
     {
         this.game = game;
         this.saveManager = new SaveManager();
+        this.audioManager = new AudioManager(game.assets.sounds);
         this.score = 0;
         this.gameOver = false;
         this.paused = false;
@@ -41,6 +43,19 @@ class GameScene
         /**/
         this.player = new Player();
         this.entities = new Entities();
+    }
+
+    enter()
+    {
+        this.audioManager.initSound();
+    }
+
+    exit()
+    {
+        this.colorCycle = 1;
+        this.colorIndex = 0;
+
+        this.audioManager.stopSound();
     }
 
     reset()
@@ -61,6 +76,7 @@ class GameScene
         {
             keys.release("Enter");
             this.paused = !this.paused;
+            this.audioManager.toggleSound();
         }
 
         if(this.paused)
@@ -100,6 +116,7 @@ class GameScene
             {
                 this.player.collided = true;
                 this.gameOver = true;
+                this.audioManager.playSFX();
                 keys.release("Enter");
             }
         }
@@ -110,6 +127,7 @@ class GameScene
             {
                 this.player.collided = true;
                 this.gameOver = true;
+                this.audioManager.playSFX();
                 keys.release("Enter");
             }
 
@@ -134,6 +152,7 @@ class GameScene
             if(this.gameOver && this.entities.obstacles.length === 0)
             {
                 this.reset();
+                this.audioManager.playBGM();
                 return;
             }
             this.player.move(keys);

@@ -12,6 +12,16 @@ class ScoreScene
         this.saveManager = new SaveManager();
     }
 
+    enter()
+    {
+
+    }
+
+    exit()
+    {
+
+    }
+
     update(keys)
     {
         if(keys.isDown("Enter"))
