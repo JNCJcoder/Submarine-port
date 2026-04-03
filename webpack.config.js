@@ -5,7 +5,7 @@ const config = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(import.meta.dirname, 'docs'),
-    clean: true,
+    clean: false,
   },
   mode: 'development',
   devServer: {
