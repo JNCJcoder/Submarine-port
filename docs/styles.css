@@ -1,8 +1,8 @@
 canvas
 {
 	position: absolute;
-	width: 348px; /* 256 */
-	height: 660px; /* 440 */
+	width: min(100vw, calc(100vh * (128 / 220)));
+    height: min(100vh, calc(100vw * (220 / 128)));
 	top: 0px;
 	bottom: 0px;
 	left: 0px;
@@ -14,5 +14,6 @@ canvas
 
 body
 {
+	overflow: hidden;
 	background-color: #3a3a3a;
 }
