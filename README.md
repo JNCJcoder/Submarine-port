@@ -1,5 +1,7 @@
 # Submarine Port
 
+<img src="./.github/submarine.webp" style="width:500px">
+
 Port em JavaScript do clássico jogo **Submarine**, originalmente desenvolvido
 pela JikeSoft para JavaME.
 
